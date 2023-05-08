@@ -24,10 +24,17 @@ html {
 
 @media only screen and (max-width: 500px){
 
+    /* General */
+
+    .ellipsis {
+        height: 100%;
+        width: 16px;
+    }
+
     /* Header */
 
     .header-container {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     .header-title-container{
@@ -95,9 +102,422 @@ html {
 
     /* Main */
 
-    .work-container {
-        color: white;
-        background-color: hsl(235, 46%, 20%);
-        margin-bottom: 10px;
+    .main-container {
+        display: flex;
+        flex-direction: column;
     }
+
+    /* Target Work */
+
+    .pic-work-container {
+        display: flex;
+        justify-content: end;
+        background-color: hsl(15, 100%, 70%);
+        margin: 0 15px 0 15px;
+        padding-right: 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        z-index: -2;
+        float: none;
+        /* Oculta la parte del elemento que se desborda de la caja */
+        overflow: hidden;
+    }
+
+    .pic-work {
+        width: 60px;
+        margin-top: -10px;
+    }
+
+    /* Container Work */
+
+    .work-container {
+        background-color: hsl(235, 46%, 20%);
+        color: white;
+        margin: -25px 15px 15px 15px;
+        padding: 20px 15px 15px 15px;
+        border-radius: 10px;
+        height: 60px;
+    }
+
+    /* Work */
+
+    .work-container-text {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: var(--type-font);
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .main-work-text{
+        padding-bottom: 5px;
+    }
+
+    .work-container-daily{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .work-hours{
+        font-family: var(--type-font);
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .last-work{
+        font-family: var(--type-font);
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    /* Target Play */
+
+    .pic-play-container {
+        display: flex;
+        justify-content: end;
+        background-color: hsl(195, 74%, 62%);
+        margin: 0 15px 0 15px;
+        padding-right: 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        z-index: -2;
+        float: none;
+        /* Oculta la parte del elemento que se desborda de la caja */
+        overflow: hidden;
+    }
+
+    .pic-play {
+        width: 60px;
+        margin-top: -10px;
+    }
+
+    /* Container Play */
+
+    .play-container {
+        background-color: hsl(235, 46%, 20%);
+        color: white;
+        margin: -25px 15px 15px 15px;
+        padding: 20px 15px 15px 15px;
+        border-radius: 10px;
+        height: 60px;
+    }
+
+    /* Play */
+
+    .play-container-text {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: var(--type-font);
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .main-play-text{
+        padding-bottom: 5px;
+    }
+
+    .play-container-daily{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .play-hours{
+        font-family: var(--type-font);
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .last-play{
+        font-family: var(--type-font);
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    /* Target Study */
+
+    .pic-study-container {
+        display: flex;
+        justify-content: end;
+        background-color: hsl(348, 100%, 68%);
+        margin: 0 15px 0 15px;
+        padding-right: 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        z-index: -2;
+        float: none;
+        /* Oculta la parte del elemento que se desborda de la caja */
+        overflow: hidden;
+    }
+
+    .pic-study {
+        width: 60px;
+        margin-top: -10px;
+    }
+
+    /* Container Study */
+
+    .study-container {
+        background-color: hsl(235, 46%, 20%);
+        color: white;
+        margin: -25px 15px 15px 15px;
+        padding: 20px 15px 15px 15px;
+        border-radius: 10px;
+        height: 60px;
+    }
+
+    /* Study */
+
+    .study-container-text {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: var(--type-font);
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .main-study-text{
+        padding-bottom: 5px;
+    }
+
+    .study-container-daily{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .study-hours{
+        font-family: var(--type-font);
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .last-study{
+        font-family: var(--type-font);
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    /* Target Exercise */
+
+    .pic-exercise-container {
+        display: flex;
+        justify-content: end;
+        height: 60px;
+        background-color: hsl(145, 58%, 55%);
+        margin: 0 15px 0 15px;
+        padding-right: 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        z-index: -2;
+        float: none;
+        /* Oculta la parte del elemento que se desborda de la caja */
+        overflow: hidden;
+    }
+
+    .pic-exercise {
+        height: 40px;
+        width: auto;
+        margin-top: -2px;
+    }
+
+    /* Container exercise */
+
+    .exercise-container {
+        background-color: hsl(235, 46%, 20%);
+        color: white;
+        margin: -35px 15px 15px 15px;
+        padding: 20px 15px 15px 15px;
+        border-radius: 10px;
+        height: 60px;
+    }
+
+    /* exercise */
+
+    .exercise-container-text {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: var(--type-font);
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .main-exercise-text{
+        padding-bottom: 5px;
+    }
+
+    .exercise-container-daily{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .exercise-hours{
+        font-family: var(--type-font);
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .last-exercise{
+        font-family: var(--type-font);
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    /* Target Social */
+
+    .pic-social-container {
+        display: flex;
+        justify-content: end;
+        background-color: hsl(264, 64%, 52%);
+        margin: 0 15px 0 15px;
+        padding-right: 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        z-index: -2;
+        float: none;
+        /* Oculta la parte del elemento que se desborda de la caja */
+        overflow: hidden;
+    }
+
+    .pic-social {
+        width: 60px;
+        margin-top: -15px;
+    }
+
+
+    /* Container Social */
+
+    .social-container {
+        background-color: hsl(235, 46%, 20%);
+        color: white;
+        margin: -40px 15px 15px 15px;
+        padding: 20px 15px 15px 15px;
+        border-radius: 10px;
+        height: 60px;
+    }
+
+    /* Social */
+
+    .social-container-text {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: var(--type-font);
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .main-social-text{
+        padding-bottom: 5px;
+    }
+
+    .social-container-daily{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .social-hours{
+        font-family: var(--type-font);
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .last-social{
+        font-family: var(--type-font);
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    /* Target Self Care */
+
+    .pic-selfCare-container {
+        display: flex;
+        justify-content: end;
+        background-color: hsl(43, 84%, 65%);
+        margin: 0 15px 0 15px;
+        padding-right: 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        z-index: -2;
+        float: none;
+        /* Oculta la parte del elemento que se desborda de la caja */
+        overflow: hidden;
+    }
+
+    .pic-selfCare {
+        width: 60px;
+        margin-top: -15px;
+    }
+
+
+    /* Container Self Care */
+
+    .selfCare-container {
+        background-color: hsl(235, 46%, 20%);
+        color: white;
+        margin: -20px 15px 15px 15px;
+        padding: 20px 15px 15px 15px;
+        border-radius: 10px;
+        height: 60px;
+    }
+
+    /* Self Care */
+
+    .selfCare-container-text {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family:var(--type-font);
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .main-selfCare-text{
+        padding-bottom: 5px;
+    }
+
+    .selfCare-container-daily{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .selfCare-hours{
+        font-family: var(--type-font);
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .last-selfCare{
+        font-family: var(--type-font);
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+
+
 }
+
+    
+
+
+
