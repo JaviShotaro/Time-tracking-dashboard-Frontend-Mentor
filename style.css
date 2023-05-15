@@ -22,7 +22,7 @@ html {
 
 /* First Mobile */
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 375px){
 
     /* General */
 
@@ -31,11 +31,15 @@ html {
         width: 16px;
     }
 
-    /* Header */
+    /* Main */
 
-    .header-container {
-        margin-bottom: 15px;
+    .main-container {
+        display: grid;
+        grid-template-rows: repeat(6, auto);
+        grid-gap: 20px;
     }
+
+    /* Header */
 
     .header-title-container{
         display: flex;
@@ -100,13 +104,6 @@ html {
         color: white;
     }
 
-    /* Main */
-
-    .main-container {
-        display: flex;
-        flex-direction: column;
-    }
-
     /* Target Work */
 
     .pic-work-container {
@@ -116,9 +113,8 @@ html {
         margin: 0 15px 0 15px;
         padding-right: 10px;
         border-radius: 10px;
-        box-sizing: border-box;
-        z-index: -2;
-        float: none;
+        position: relative;
+        z-index: 1;
         /* Oculta la parte del elemento que se desborda de la caja */
         overflow: hidden;
     }
@@ -133,10 +129,12 @@ html {
     .work-container {
         background-color: hsl(235, 46%, 20%);
         color: white;
-        margin: -25px 15px 15px 15px;
+        margin: -25px 15px 0 15px;
         padding: 20px 15px 15px 15px;
         border-radius: 10px;
         height: 60px;
+        position: relative;
+        z-index: 2;
     }
 
     /* Work */
@@ -183,9 +181,8 @@ html {
         margin: 0 15px 0 15px;
         padding-right: 10px;
         border-radius: 10px;
-        box-sizing: border-box;
-        z-index: -2;
-        float: none;
+        position: relative;
+        z-index: 1;
         /* Oculta la parte del elemento que se desborda de la caja */
         overflow: hidden;
     }
@@ -200,10 +197,12 @@ html {
     .play-container {
         background-color: hsl(235, 46%, 20%);
         color: white;
-        margin: -25px 15px 15px 15px;
+        margin: -25px 15px 0 15px;
         padding: 20px 15px 15px 15px;
         border-radius: 10px;
         height: 60px;
+        position: relative;
+        z-index: 2;
     }
 
     /* Play */
@@ -250,9 +249,8 @@ html {
         margin: 0 15px 0 15px;
         padding-right: 10px;
         border-radius: 10px;
-        box-sizing: border-box;
-        z-index: -2;
-        float: none;
+        position: relative;
+        z-index: 1;
         /* Oculta la parte del elemento que se desborda de la caja */
         overflow: hidden;
     }
@@ -267,10 +265,12 @@ html {
     .study-container {
         background-color: hsl(235, 46%, 20%);
         color: white;
-        margin: -25px 15px 15px 15px;
+        margin: -25px 15px 0 15px;
         padding: 20px 15px 15px 15px;
         border-radius: 10px;
         height: 60px;
+        position: relative;
+        z-index: 2;
     }
 
     /* Study */
@@ -318,9 +318,8 @@ html {
         margin: 0 15px 0 15px;
         padding-right: 10px;
         border-radius: 10px;
-        box-sizing: border-box;
-        z-index: -2;
-        float: none;
+        position: relative;
+        z-index: 1;
         /* Oculta la parte del elemento que se desborda de la caja */
         overflow: hidden;
     }
@@ -336,10 +335,12 @@ html {
     .exercise-container {
         background-color: hsl(235, 46%, 20%);
         color: white;
-        margin: -35px 15px 15px 15px;
+        margin: -32px 15px 0 15px;
         padding: 20px 15px 15px 15px;
         border-radius: 10px;
         height: 60px;
+        position: relative;
+        z-index: 2;
     }
 
     /* exercise */
@@ -386,9 +387,8 @@ html {
         margin: 0 15px 0 15px;
         padding-right: 10px;
         border-radius: 10px;
-        box-sizing: border-box;
-        z-index: -2;
-        float: none;
+        position: relative;
+        z-index: 1;
         /* Oculta la parte del elemento que se desborda de la caja */
         overflow: hidden;
     }
@@ -404,10 +404,12 @@ html {
     .social-container {
         background-color: hsl(235, 46%, 20%);
         color: white;
-        margin: -40px 15px 15px 15px;
+        margin: -35px 15px 0 15px;
         padding: 20px 15px 15px 15px;
         border-radius: 10px;
         height: 60px;
+        position: relative;
+        z-index: 2;
     }
 
     /* Social */
@@ -454,9 +456,8 @@ html {
         margin: 0 15px 0 15px;
         padding-right: 10px;
         border-radius: 10px;
-        box-sizing: border-box;
-        z-index: -2;
-        float: none;
+        position: relative;
+        z-index: 1;
         /* Oculta la parte del elemento que se desborda de la caja */
         overflow: hidden;
     }
@@ -472,10 +473,12 @@ html {
     .selfCare-container {
         background-color: hsl(235, 46%, 20%);
         color: white;
-        margin: -20px 15px 15px 15px;
+        margin: -18px 15px 0 15px;
         padding: 20px 15px 15px 15px;
         border-radius: 10px;
         height: 60px;
+        position: relative;
+        z-index: 2;
     }
 
     /* Self Care */
@@ -513,8 +516,560 @@ html {
         font-weight: 300;
     }
 
+    .attribution{
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+}
+
+/* Desktop Design */
+
+@media (min-width: 376px) {
+
+    /* General */
+
+    .ellipsis {
+        height: 100%;
+        width: 16px;
+    }
+
+    /* Main */
+
+    .main-container {
+        margin: 200px 100px 100px 100px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Header */
+
+    .header-container {
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .header-title-container{
+        padding: 20px 0 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        height: 250px;
+        background-color: hsl(246, 80%, 60%);
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .img {
+        width: 70px;
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+
+    .header-text-container {
+        padding-top: 30px;
+        font-family: var(--type-font);
+        color: white;
+        font-weight: 300;
+        margin-left: 10px;
+    }
+
+    .text-report{
+        font-size: 12px;
+        padding-bottom: 5px;
+        margin: 0;
+    }
+
+    .text-name {
+        font-size: 30px;
+        padding-right: 40px;
+        margin: 0;
+    }
+
+    .header-seccion-container {
+        background-color: hsl(235, 46%, 20%);
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0 0 20px;
+        height: 110px;
+        margin: -15px 0 0 0;
+        float: none;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+    .daily-header {
+        padding-top: 20px;
+    }
+
+    .header-seccion-text {
+        color: hsl(235, 45%, 61%);
+        font-family: var(--type-font);
+        font-weight: 300;
+        font-size: 12px;
+        text-decoration: none;
+        padding-bottom: 10px;
+    }
+
+    .header-seccion-container a:hover {
+        color: white;
+    }
+
+    /* Target Work */
+
+    .div-container-work{
+        min-width: 150px;
+    }
+
+    .pic-work-container {
+        display: flex;
+        justify-content: end;
+        background-color: hsl(15, 100%, 70%);
+        padding-right: 10px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        /* Oculta la parte del elemento que se desborda de la caja */
+        overflow: hidden;
+        
+    }
+
+    .pic-work {
+        width: 70px;
+        margin-top: -10px;
+    }
+
+    /* Container Work */
+
+    .work-container {
+        background-color: hsl(235, 46%, 20%);
+        color: white;
+        margin: -25px 0 0 0;
+        padding: 20px 15px 15px 15px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 2;
+        height: 100px;
+    }
+
+    /* Work */
+
+    .work-container-text {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: var(--type-font);
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .main-work-text{
+        padding-bottom: 5px;
+    }
+
+    .work-container-daily{
+        display: flex;
+        flex-direction: column;
+        align-items: start
+    }
+
+    .work-hours{
+        padding-top: 10px;
+        font-family: var(--type-font);
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .last-work{
+        padding-top: 5px;
+        font-family: var(--type-font);
+        font-size: 10px;
+        font-weight: 300;
+        color: hsl(236, 100%, 87%);
+    }
+
+    /* Target Play */
+
+    .div-container-play{
+        min-width: 150px;
+    }
+
+    .pic-play-container {
+        display: flex;
+        justify-content: end;
+        background-color: hsl(195, 74%, 62%);
+        padding-right: 10px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        /* Oculta la parte del elemento que se desborda de la caja */
+        overflow: hidden;
+    }
+
+    .pic-play {
+        width: 70px;
+        margin-top: -10px;
+    }
+
+    /* Container Play */
+
+    .play-container {
+        background-color: hsl(235, 46%, 20%);
+        color: white;
+        margin: -25px 0 0 0;
+        padding: 20px 15px 15px 15px;
+        border-radius: 10px;
+        height: 100px;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Play */
+
+    .play-container-text {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: var(--type-font);
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .main-play-text{
+        padding-bottom: 5px;
+    }
+
+    .play-container-daily{
+        display: flex;
+        flex-direction: column;
+        align-items: start
+    }
+
+    .play-hours{
+        padding-top: 10px;
+        font-family: var(--type-font);
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .last-play{
+        padding-top: 5px;
+        font-family: var(--type-font);
+        font-size: 10px;
+        font-weight: 300;
+        color: hsl(236, 100%, 87%);
+    }
+
+    /* Target Study */
+
+    .div-container-study{
+        min-width: 150px;
+    }
+
+    .pic-study-container {
+        display: flex;
+        justify-content: end;
+        background-color: hsl(348, 100%, 68%);
+        padding-right: 10px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        /* Oculta la parte del elemento que se desborda de la caja */
+        overflow: hidden;
+    }
+
+    .pic-study {
+        width: 70px;
+        margin-top: -10px;
+    }
+
+    /* Container Study */
+
+    .study-container {
+        background-color: hsl(235, 46%, 20%);
+        color: white;
+        margin: -25px 0 0 0;
+        padding: 20px 15px 15px 15px;
+        border-radius: 10px;
+        height: 100px;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Study */
+
+    .study-container-text {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: var(--type-font);
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .main-study-text{
+        padding-bottom: 5px;
+    }
+
+    .study-container-daily{
+        display: flex;
+        flex-direction: column;
+        align-items: start
+    }
+
+    .study-hours{
+        padding-top: 10px;
+        font-family: var(--type-font);
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .last-study{
+        padding-top: 5px;
+        font-family: var(--type-font);
+        font-size: 10px;
+        font-weight: 300;
+        color: hsl(236, 100%, 87%);
+    }
+
+    /* Target Exercise */
+
+    .div-container-exercise{
+        min-width: 150px;
+    }
+
+    .pic-exercise-container {
+        display: flex;
+        justify-content: end;
+        height: 70px;
+        background-color: hsl(145, 58%, 55%);
+        padding-right: 10px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        /* Oculta la parte del elemento que se desborda de la caja */
+        overflow: hidden;
+    }
+
+    .pic-exercise {
+        height: 40px;
+        width: auto;
+        margin-top: -2px;
+    }
+
+    /* Container exercise */
+
+    .exercise-container {
+        background-color: hsl(235, 46%, 20%);
+        color: white;
+        margin: -32px 0 0 0;
+        padding: 20px 15px 15px 15px;
+        border-radius: 10px;
+        height: 100px;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* exercise */
+
+    .exercise-container-text {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: var(--type-font);
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .main-exercise-text{
+        padding-bottom: 5px;
+    }
+
+    .exercise-container-daily{
+        display: flex;
+        flex-direction: column;
+        align-items: start
+    }
+
+    .exercise-hours{
+        padding-top: 10px;
+        font-family: var(--type-font);
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .last-exercise{
+        padding-top: 5px;
+        font-family: var(--type-font);
+        font-size: 10px;
+        font-weight: 300;
+        color: hsl(236, 100%, 87%);
+    }
+
+    /* Target Social */
+
+    .div-container-social{
+        min-width: 150px;
+    }
+
+    .pic-social-container {
+        display: flex;
+        justify-content: end;
+        background-color: hsl(264, 64%, 52%);
+        padding-right: 10px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        /* Oculta la parte del elemento que se desborda de la caja */
+        overflow: hidden;
+    }
+
+    .pic-social {
+        width: 65px;
+        margin-top: -15px;
+    }
 
 
+    /* Container Social */
+
+    .social-container {
+        background-color: hsl(235, 46%, 20%);
+        color: white;
+        margin: -35px 0 0 0;
+        padding: 20px 15px 15px 15px;
+        border-radius: 10px;
+        height: 100px;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Social */
+
+    .social-container-text {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: var(--type-font);
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .main-social-text{
+        padding-bottom: 5px;
+    }
+
+    .social-container-daily{
+        display: flex;
+        flex-direction: column;
+        align-items: start
+    }
+
+    .social-hours{
+        padding-top: 10px;
+        font-family: var(--type-font);
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .last-social{
+        padding-top: 5px;
+        font-family: var(--type-font);
+        font-size: 10px;
+        font-weight: 300;
+        color: hsl(236, 100%, 87%);
+    }
+
+    /* Target Self Care */
+
+    .pic-selfCare-container {
+        display: flex;
+        justify-content: end;
+        background-color: hsl(43, 84%, 65%);
+        padding-right: 10px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        /* Oculta la parte del elemento que se desborda de la caja */
+        overflow: hidden;
+    }
+
+    .pic-selfCare {
+        width: 70px;
+        margin-top: -15px;
+    }
+
+
+    /* Container Self Care */
+
+    .selfCare-container {
+        background-color: hsl(235, 46%, 20%);
+        color: white;
+        margin: -18px 0 0 0;
+        padding: 20px 15px 15px 15px;
+        border-radius: 10px;
+        height: 100px;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Self Care */
+
+    .div-container-selfCare{
+        min-width: 150px;
+    }
+
+    .selfCare-container-text {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family:var(--type-font);
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .main-selfCare-text{
+        padding-bottom: 5px;
+    }
+
+    .selfCare-container-daily{
+        display: flex;
+        flex-direction: column;
+        align-items: start
+    }
+
+    .selfCare-hours{
+        padding-top: 10px;
+        font-family: var(--type-font);
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .last-selfCare{
+        padding-top: 5px;
+        font-family: var(--type-font);
+        font-size: 10px;
+        font-weight: 300;
+        color: hsl(236, 100%, 87%);
+    }
+
+    .attribution{
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
 }
 
     
