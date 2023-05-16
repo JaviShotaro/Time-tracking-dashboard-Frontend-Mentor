@@ -22,7 +22,7 @@ html {
 
 /* First Mobile */
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 600px){
 
     /* General */
 
@@ -527,7 +527,7 @@ html {
 
 /* Desktop Design */
 
-@media (min-width: 376px) {
+@media (min-width: 600px) {
 
     /* General */
 
