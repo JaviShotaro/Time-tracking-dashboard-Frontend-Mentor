@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-(images/image-capture.jpg)
+(./images/image-capture.jpg)
 
 ### Links
 
