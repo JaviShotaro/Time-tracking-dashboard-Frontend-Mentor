@@ -22,10 +22,6 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Switch between viewing Daily, Weekly, and Monthly stats
 
-### Screenshot
-
-("./image-capture.jpg")
-
 ### Links
 
 - Live Site URL: [live site URL](https://s9code.github.io/Time-tracking-dashboard-Frontend-Mentor/)
