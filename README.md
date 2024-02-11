@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [live site URL](https://s9code.github.io/Time-tracking-dashboard-Frontend-Mentor/)
+- Live Site URL: [live site URL]([https://s9code.github.io/Time-tracking-dashboard-Frontend-Mentor/](https://vercel.com/s9code/time-tracking-dashboard-frontend-mentor/Cg9yfvc2oXx4EtNT2McoVc9i5wi7))
 
 ### Built with
 
