@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [live site URL]([https://time-tracking-dashboard-frontend-mentor-a0c4ag2x5-s9code.vercel.app)
+- Live Site URL: [live site URL](https://time-tracking-dashboard-frontend-mentor-a0c4ag2x5-s9code.vercel.app)
 
 ### Built with
 
